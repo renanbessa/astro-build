@@ -4,16 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "astro start",
     "build": "astro build",
     "preview": "astro preview",
+    "demo": "astro build && astro preview",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts",
     "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
     "@astrojs/react": "^0.4.2",
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
     "astro": "^1.0.0-beta.73",
     "eslint": "^8.20.0",
     "eslint-config-standard": "^17.0.0",
@@ -25,5 +26,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^0.2.6"
   }
 }

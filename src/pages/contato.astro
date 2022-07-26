@@ -1,0 +1,10 @@
+---
+import { makeGetPage } from "@src/data/page/make-get-page";
+import Layout from "../layouts/Layout.astro";
+
+const page = await makeGetPage('/contato')
+---
+
+<Layout title='Contato'>
+  <article set:html={page.content} />
+</Layout>
