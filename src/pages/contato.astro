@@ -1,10 +1,21 @@
 ---
-import { makeGetPage } from "@src/data/page/make-get-page";
-import Layout from "../layouts/Layout.astro";
+import Banner from '@src/components/Banner.astro'
+import Header from '@src/components/Header.astro'
+import {makeGetPage} from '@src/data/page/make-get-page'
+import Layout from '../layouts/Layout.astro'
 
 const page = await makeGetPage('/contato')
 ---
 
-<Layout title='Contato'>
-  <article set:html={page.content} />
+<Layout title="Contato">
+  <Header />
+  <Banner
+    title="Contato"
+    subtitle="Contato, dúvidas, informações e tudo mais..."
+  />
+  <div class="container mx-auto flex flex-wrap py-6 px-28">
+    <section class="w-full md:w-3/3 flex flex-col items-center px-3">
+      <article class="flex flex-col my-4" set:html={page.content}></article>
+    </section>
+  </div>
 </Layout>
