@@ -12,6 +12,7 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
+    "@astrojs/image": "^0.2.0",
     "@astrojs/react": "^0.4.2",
     "@astrojs/tailwind": "^0.2.5",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
@@ -30,6 +31,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@astrojs/vercel": "^0.2.6"
+    "@astrojs/vercel": "^0.2.6",
+    "astro-critters": "0.0.10"
   }
 }

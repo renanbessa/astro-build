@@ -10,7 +10,13 @@ const {title, subtitle} = Astro.props as Props
   <div
     class="grid max-w-screen-xl px-4 py-12 mx-auto text-center space-y-8 text-white font-bold justify-center"
   >
-    <img src="/icons/flag.png" alt="Icon Página de Contato" class="mx-auto" />
+    <img
+      src={'/icons/flag.png'}
+      width="86"
+      height="40"
+      alt="Icon Página de Contato"
+      class="mx-auto"
+    />
     <h1 class="uppercase text-4xl">{title}</h1>
     <h2 class="text-base">{subtitle}</h2>
   </div>
